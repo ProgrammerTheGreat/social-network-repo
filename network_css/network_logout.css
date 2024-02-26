@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100%;
+  display: grid;
+  justify-content: center;
+  padding-top: 10rem;
+}
+
+.btn {
+  margin: 0.5rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: 60px;
+}/*# sourceMappingURL=network_logout.css.map */
