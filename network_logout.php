@@ -12,24 +12,23 @@
 
 <body>
 <div class="container">
-<div class="text-center">
-<div class="logo">Social network</div>
-  <h1 class="display-6">Thanks for stopping by. We hope to see you again soon!</h1>
-</div>
-
-<form class="row"> <!--This aligned 2 buttons vertically-->
-  <div class="mb-3">
-    <label for="username" class="form-label">Username</label>
-    <input type="text" class="form-control" id="username">
+  <div class="text-center">
+    <div class="logo">Social network</div>
+    <h1 class="display-6">Thanks for stopping by. We hope to see you again soon!</h1>
   </div>
-  <div class="mb-3">
-    <label for="password" class="form-label">Password</label>
-    <input type="password" class="form-control" id="password">
-  </div>
-  <button type="submit" class="btn btn-primary">Login</button>
-  <a class="btn btn-secondary" href="network_register.php">Create new account</a>
-</form>
 
+  <form class="row" action="network_profile_loggedin.php" method="post">
+    <div class="mb-3">
+      <label for="username" class="form-label">Username</label>
+      <input type="text" class="form-control" id="username" name="username">
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password</label>
+      <input type="password" class="form-control" id="password" name="password">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+    <a class="btn btn-secondary" href="network_register.php">Create new account</a>
+  </form>
 </div>
 
 

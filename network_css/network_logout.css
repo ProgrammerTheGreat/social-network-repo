@@ -6,20 +6,18 @@
 
 .container {
   height: 100%;
-  display: grid;
-  justify-content: center;
-  padding-top: 10rem;
-}
-
-.btn {
-  margin: 0.5rem;
-}
-
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
   width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+.container .text-center {
+  grid-area: 2/2/span 1/span 2; /*grid-row-start / grid-column-start / row-span / column-span*/
+}
+.container .text-center .logo {
   font-size: 60px;
+}
+.container form {
+  grid-area: 3/2/span 2/span 2; /*grid-row-start / grid-column-start / row-span / column-span*/
+  align-items: center;
 }/*# sourceMappingURL=network_logout.css.map */

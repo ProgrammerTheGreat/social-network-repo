@@ -4,6 +4,45 @@
     padding: 0;
 }
 
+/* Modal Styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+
+
 .container-1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -13,8 +52,7 @@
     grid-gap: 10px; 
     justify-items: center; 
     align-items: center;
-    //background-color: brown;
-
+    //background-color: red;
 
     .logo {
         display: flex;
@@ -27,16 +65,8 @@
         justify-self: start;
         gap: 10px;
         width: 50%;
-        //grid-column: span 2;
-        
     }
 }
-
-/*.nav-pills {
-    display: flex;
-    justify-content: space-evenly;
-}*/
-
 
 .container-2 {
     display: grid;
@@ -71,67 +101,97 @@
     .nav-pills {
         grid-area: 6 / 1 / span 1 / span 3; /* grid-row-start / grid-column-start / row-span / column-span */
         gap: 40px;
-        z-index: 1;
+        z-index: 0;
     }
-
 }
 
 .container-3 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr); 
-    background-color: green;
     height: 80vh;
     width: 100%;
-    grid-gap: 10px; 
-    align-items: center; 
+    align-items: center;
+    background-color: yellow;
 
     .friends-container {
-        grid-area: 2 / 1 / span 4 / span 1;
+        grid-area: 1 / 1 / span 5 / span 1; /* grid-row-start / grid-column-start / row-span / column-span */
         height: 100%;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        background-color: yellow;
+        overflow-y: auto;
+
+        .list-group-item {
+            width: 100%; 
+            height: auto; /* Let the height be determined by content */
+            margin-bottom: 20px; /* Add margin bottom for spacing between posts */
+            background-color: white; /* Optional: Add background color to posts */
+            border: 1px solid #ccc; /* Optional: Add border to posts */
+            padding: 30px; /* Optional: Add padding to posts */
+            border-radius: 5px; /* Optional: Add border radius to posts for a nicer look */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow to posts for a lifted look */
         
-        .list-group {
-            gap: 40px;
+            .online-status {
+                display: block;
+                background-color: green;
+                height: 10px;
+                width: 10px;
+            }
+        
         }
+
+        
     }
 
     .photo-container {
         grid-area: 1/ 2 / span 2 / span 2;
         height: 100%;
         width: 100%;
-        background-color: yellow;
-        display: grid; /* Change to grid layout */
-        grid-template-columns: repeat(2, 1fr); /* Two columns */
-        grid-template-rows: repeat(2, 1fr); /* Two rows */
+        background-color: pink;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(2, 1fr); 
         grid-gap: 10px; /* Gap between photos */
         
         .photo {
-            width: 100%; /* Full width */
-            height: 100%; /* Full height */
-            border: 1px solid;
+            width: 100%; 
+            height: 100%; 
+            //border: 1px solid;
             display: flex;
             justify-content: center;
             align-items: center;
         }
     }
 
-    .feed-container {
-        grid-area: 3 / 2 / span 3 / span 2; /* Span 3 rows, 2 columns */
-        /* Your styling for feed container */
-        background-color: gray;
+    
+    .own-feed-container {
+        grid-area: 3 / 2 / span 3 / span 2; /* grid-row-start / grid-column-start / row-span / column-span */
+        width: 100%; 
+        height: 100%; 
+        background-color: red;
         display: flex;
         flex-direction: column;
+        padding: 10px;
+        overflow-y: auto;
+
+        .post {
+            width: 100%; 
+            height: auto; /* Let the height be determined by content */
+            margin-bottom: 20px; /* Add margin bottom for spacing between posts */
+            background-color: white; /* Optional: Add background color to posts */
+            border: 1px solid #ccc; /* Optional: Add border to posts */
+            padding: 20px; /* Optional: Add padding to posts */
+            border-radius: 5px; /* Optional: Add border radius to posts for a nicer look */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Add box shadow to posts for a lifted look */
+        }
+        }
     }
 
-    /*.post {
-        
-    } */
 
 
-}
+
 
 

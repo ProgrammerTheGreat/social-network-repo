@@ -1,0 +1,57 @@
+#chatToggleBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999; /* Ensure the button stays on top of other content */
+}
+
+/* CSS for chat menu */
+.chat-menu {
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    max-width: 300px;
+    display: none;
+}
+
+.chat-menu.active {
+    display: block;
+}
+
+.chat-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.chat-menu-header h2 {
+    margin: 0;
+}
+
+.chat-menu-content {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.chat-menu-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.chat-menu-content li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.chat-menu-content li:last-child {
+    border-bottom: none;
+}
