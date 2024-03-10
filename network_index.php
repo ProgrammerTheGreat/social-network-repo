@@ -13,15 +13,13 @@
 <div class="container">
 <div class="logo">Social network</div>
 <div class="text-center">
-  
-  <!--<img src="network_images/test-logo.jpg" class="rounded" alt="brand-logo">-->
   <h1 class="display-6">Connect with your friends on a social network</h1>
 </div>
-
-<form class="row"> <!--This aligned 2 buttons vertically-->
+<br>
+<form class="row"> 
   <div class="mb-3">
-    <label for="username" class="form-label">Username</label>
-    <input type="text" class="form-control" id="username">
+    <label for="email" class="form-label">Email <address></address></label>
+    <input type="email" class="form-control" id="email">
   </div>
   <div class="mb-3">
     <label for="password" class="form-label">Password</label>
@@ -30,7 +28,6 @@
   <a type="button" class="btn btn-primary" href="network_home_loggedin.php">Login</a>
   <a class="btn btn-secondary" href="network_register.php">Register your new account here</a>
 </form>
-
 </div>
 
 </body>

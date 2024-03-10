@@ -41,9 +41,6 @@ $loggedInUser = "JohnDoe"; // Placeholder for logged-in user's username
 
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Messages</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="network_profile_loggedin.php">My profile</a>
             </li>
             <li class="nav-item">

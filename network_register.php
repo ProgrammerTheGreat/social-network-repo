@@ -17,12 +17,12 @@
   <h1 class="display-6">New users, register to our social network</h1>
 </div>
 
-<form class="row"> <!--This aligned 2 buttons vertically-->
+<form class="row">
   <div class="mb-3">
     <label for="birthday" class="form-label">Birthday</label>
     <input type="date" class="form-control" id="birthday" min="1900-01-01" max="2020-01-01">
   </div>
-  <div class="mb-3">
+ <!-- <div class="mb-3">
     <label for="gender" class="form-label">Gender</label>
     <select type="select" class="form-control" id="gender">
       <option selected disabled hidden></option>
@@ -30,9 +30,9 @@
       <option>Female</option>
       <option>Other</option>
     </select>
-  </div>
+  </div> -->
   <div class="mb-3">
-    <label for="username" class="form-label">Username</label>
+    <label for="username" class="form-label">Full name</label>
     <input type="text" class="form-control" id="username">
   </div>
   <div class="mb-3">
