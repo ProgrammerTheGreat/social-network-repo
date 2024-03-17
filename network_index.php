@@ -10,6 +10,7 @@
     <script src="network_js/network_index.js" type="text/javascript"></script>
 </head>
 <body>
+  
 <div class="container">
 <div class="logo">Social network</div>
 <div class="text-center">

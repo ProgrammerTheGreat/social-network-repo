@@ -103,7 +103,6 @@
   height: 80vh;
   width: 100%;
   align-items: center;
-  background-color: yellow;
 }
 .container-3 .friends-container {
   grid-area: 1/1/span 5/span 1; /* grid-row-start / grid-column-start / row-span / column-span */
@@ -112,7 +111,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: yellow;
   overflow-y: auto;
 }
 .container-3 .friends-container .list-group-item {
@@ -135,7 +133,6 @@
   grid-area: 1/2/span 2/span 2;
   height: 100%;
   width: 100%;
-  background-color: pink;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -152,7 +149,6 @@
   grid-area: 3/2/span 3/span 2; /* grid-row-start / grid-column-start / row-span / column-span */
   width: 100%;
   height: 100%;
-  background-color: red;
   display: flex;
   flex-direction: column;
   padding: 10px;
