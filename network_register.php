@@ -19,6 +19,14 @@
   catch (PDOException $e) {
     throw new PDOException($e->getMessage(), (int)$e->getCode());
   }
+/* This one might not work. Taken from the book.
+  $query = "SELECT * FROM users";
+  $result = $pdo->query($query);
+
+  while ($row = $result->fetch())
+  {
+    echo 'User:  ' . htmlspecialchars($row['username']);
+  } */
 
   /* function register (birthday, fullName, password, email){
 
